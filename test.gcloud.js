@@ -18,19 +18,19 @@ var gcloud = require('./lib/gcloud_promise.js'),
     var objarr = [{
         Symbol: 'ATVI',
         Name: 'Activision Blizzard Inc',
-        lastsale: 20.14,
-        netchange: 0.24,
-        pctchange: 1.21,
-        share_volume: 939808,
-        Nasdaq100_points: 0.2
+        lastSale: 20.14,
+        netChange: 0.24,
+        pctChange: 1.21,
+        shareVolume: 939808,
+        Nasdaq100Points: 0.2
     }, {
         Symbol: 'EBAY',
         Name: 'eBay Inc',
-        lastsale: 55.003,
-        netchange: 0.16,
-        pctchange: 0.33,
-        share_volume: 923661,
-        Nasdaq100_points: 0.2
+        lastSale: 55.003,
+        netChange: 0.16,
+        pctChange: 0.33,
+        shareVolume: 923661,
+        Nasdaq100Points: 0.2
     }];
     ds = gc.datastore(acct.project_id);
 ds.transaction().then(function(t) {
