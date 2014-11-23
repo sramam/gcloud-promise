@@ -14,6 +14,7 @@ The code is much smaller, and IMHO, much easier to understand. YMMV.
 
 ## Installation
 Simply,
+
     npm install gcloud-promise
 
 ## Get gcloud credentials
