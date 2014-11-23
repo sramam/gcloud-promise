@@ -1,0 +1,32 @@
+{
+  "name": "gcloud-promise",
+  "version": "0.1.0",
+  "description": "Promises based interface to Google Cloud services",
+  "main": "lib/gcloud_promise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sramam/gcloud-promise.git"
+  },
+  "keywords": [
+    "google",
+    "cloud",
+    "datastore",
+    "storage",
+    "node",
+    "promise"
+  ],
+  "author": "Shishir Ramam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sramam/gcloud-promise/issues"
+  },
+  "homepage": "https://github.com/sramam/gcloud-promise",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "jws": "^0.2.6",
+    "request": "^2.48.0"
+  }
+}
