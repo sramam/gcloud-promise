@@ -18,20 +18,20 @@ Simply,
     npm install gcloud-promise
 
 ## Get gcloud credentials
-Follow instructions at:
-   https://cloud.google.com/datastore/docs/activate
 
-The Google cloud API provides 2 mechanisms of access:
+Get credentials to access your datastore
+  - Follow instructions at: https://cloud.google.com/datastore/docs/activate
+    The Google cloud API provides 2 mechanisms of access:
 
-1. From Google Compute Engine
-2. From other platforms (like localhost, AWS etc).
+    1. From Google Compute Engine
+    2. From other platforms (like localhost, AWS etc).
 
-At this point, only #2 has been tested with this library.
+    At this point, only #2 has been tested with this library.
 
- - create a service account,
- - download the credentials to project_keyFile.json
-   (keep this away from the main code directory and never
-    commit it to the same VCS as your code)
+    - create a service account,
+    - download the credentials to project_keyFile.json
+      (keep this away from the main code directory and never
+       commit it to the same VCS as your code)
 
 ## Setup environment variable to track the key file.
 
