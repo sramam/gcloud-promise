@@ -48,7 +48,7 @@ ds.transaction().then(function(t) {
             console.log('commit succeeded:' + res.statusCode + ' ' + JSON.stringify(res.body));
             return res;
         } else {
-            throw('commit failure ' + res.statusCode + ' ' + res.errors);
+            throw('commit failure ' + res.statusCode + ' ' + JSON.stringify(res.errors));
         }
     }).catch(function(err) {
         throw('commit failed: ' + err);

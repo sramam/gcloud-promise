@@ -1,6 +1,6 @@
 {
   "name": "gcloud-promise",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Promises based interface to Google Cloud services",
   "main": "lib/gcloud_promise.js",
   "scripts": {
