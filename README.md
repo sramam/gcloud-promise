@@ -27,7 +27,7 @@ The Google cloud API provides 2 mechanisms of access:
 1. From Google Compute Engine
 2. From other platforms (like localhost, AWS etc).
 
-At this point, only ii) has been tested with this library.
+At this point, only #2 has been tested with this library.
 
  - create a service account and
  - download credentials to project_keyFile.json

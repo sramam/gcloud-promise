@@ -43,18 +43,21 @@ ds.transaction().then(function(t) {
         acc.push(ds.entity.toProto(obj, key));
         return acc;
     }, []);
-    t.upsert(entities).commit().then(function(res) {
+    return t.upsert(entities).commit().then(function(res) {
         if (res.statusCode === 200) {
             console.log('commit succeeded:' + res.statusCode + ' ' + JSON.stringify(res.body));
+            return res;
         } else {
             throw('commit failure ' + res.statusCode + ' ' + res.errors);
         }
     }).catch(function(err) {
-        throw('comit failed: ' + err);
+        throw('commit failed: ' + err);
     });
-}).then(function() {
-    //ds.gql(cust_id).query("SELECT * FROM Nasdaq100").
-
+}).then(function(d) {
+    var gql = ds.gql(cust_id).query("SELECT * FROM Nasdaq100 ORDER BY netChange")
+    return gql.execute().then(function(result) {
+        console.log(JSON.stringify(result));
+    });
 });
 
 if (false) {
