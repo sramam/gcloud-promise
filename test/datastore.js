@@ -21,6 +21,7 @@ if (record) {
     });
     console.error('pending nocks at START: %j', undone);
 }
+
 var assert = require("assert"),
     fs = require('fs'),
     keyfile = process.env.GCLOUD_KEYFILE,
@@ -67,6 +68,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.upsert(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 30);
                 done();
@@ -93,6 +95,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.delete(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 30);
                 done();
@@ -109,6 +112,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.insert(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 30);
                 done();
@@ -126,6 +130,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.update(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 8);
                 done();
@@ -142,6 +147,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.update(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 0);
                 done();
@@ -168,6 +174,7 @@ describe('gcloud-datastore', function(){
                 return acc;
             }, []);
             return t.delete(entities).commit().then(function(res) {
+                console.log(JSON.stringify(res, null, 2));
                 assert.equal(res.statusCode, 200);
                 assert.equal(res.body.mutationResult.indexUpdates, 30);
                 done();
@@ -195,7 +202,6 @@ var project_id = acct.project_id.substring(2),
 describe('gcloud-storage', function() {
     it('should create a bucket', function(done) {
         storage.bucket.create(test_bkt).then(function(res) {
-            console.log(JSON.stringify(res, null, 2));
             assert(res.statusCode, 200);
             assert(res.body.kind, 'storage#bucket');
             assert(res.body.id, test_bkt);

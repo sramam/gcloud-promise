@@ -1,10 +1,10 @@
 {
   "name": "gcloud-promise",
-  "version": "0.1.3",
+  "version": "0.1.3.1",
   "description": "Promises based interface to Google Cloud services",
   "main": "lib/gcloud_promise.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
