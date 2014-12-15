@@ -1,0 +1,1117 @@
+[
+  {
+    "scope": "https://accounts.google.com:443",
+    "method": "POST",
+    "path": "/o/oauth2/token",
+    "body": "----------------------------921726920001132208905698\r\nContent-Disposition: form-data; name=\"grant_type\"\r\n\r\nurn:ietf:params:oauth:grant-type:jwt-bearer\r\n----------------------------921726920001132208905698\r\nContent-Disposition: form-data; name=\"assertion\"\r\n\r\neyJhbGciOiJSUzI1NiIsInR5cGUiOiJKV1QifQ.eyJpc3MiOiI4MDA3MDY3MTY1NTQtdHY5YW4wNXRtMXB0YXUzYnRzbThicWs3b3VqcmdsdTNAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvY2xvdWQtcGxhdGZvcm0gaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9kYXRhc3RvcmUgaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC91c2VyaW5mby5lbWFpbCIsImF1ZCI6Imh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi90b2tlbiIsImV4cCI6MTQxODYyNTEzMiwiaWF0IjoxNDE4NjIxNTMyfQ.UJzRsMachhhPPmnK4EOzKp9aJC_nqCi0pCAgLyb1RX99r-xdATB4PwLeKFhzlJ3uRuKTIHdBTcoyxPi2PSss6oYdZ1CstyZ17hZlB3yJLEYyu9_Q7Xfc2ZcbUHzFQHM2Oru2zeigb4ioUJJzr0umsvaRScuBcV9_Dtv0t3ginYo\r\n----------------------------921726920001132208905698--",
+    "status": 200,
+    "response": {
+      "access_token": "ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "token_type": "Bearer",
+      "expires_in": 3600
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:13 GMT",
+      "content-disposition": "attachment; filename=\"json.txt\"; filename*=UTF-8''json.txt",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "content-type": "multipart/form-data; boundary=--------------------------921726920001132208905698",
+      "host": "accounts.google.com",
+      "content-length": 947
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "EZQQQFHlIR-oGkkABRmGMaFjMrEeSOJ0qwi1BvCryRhgfNSuiOXF3zt6s1_E66qYJCRzSC8B3et63yaI3LhTm60z5HgDv2JsBKkx64brPB_P-Jjz"
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:13 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/gFk2z1xx33vpsDVzVxN7y-EPDGw\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "EZQQQFHlIR-oGkkABRmGMaFjMrEeSOJ0qwi1BvCryRhgfNSuiOXF3zt6s1_E66qYJCRzSC8B3et63yaI3LhTm60z5HgDv2JsBKkx64brPB_P-Jjz",
+      "mutation": {
+        "upsert": [
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "ATVI"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "ATVI"
+              },
+              "Name": {
+                "stringValue": "Activision Blizzard Inc"
+              },
+              "lastSale": {
+                "doubleValue": 20.14
+              },
+              "netChange": {
+                "doubleValue": 0.24
+              },
+              "pctChange": {
+                "doubleValue": 1.21
+              },
+              "shareVolume": {
+                "integerValue": 939808
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.3
+              }
+            }
+          },
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "EBAY"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "EBAY"
+              },
+              "Name": {
+                "stringValue": "eBay Inc"
+              },
+              "lastSale": {
+                "doubleValue": 55.003
+              },
+              "netChange": {
+                "doubleValue": 0.16
+              },
+              "pctChange": {
+                "doubleValue": 0.33
+              },
+              "shareVolume": {
+                "integerValue": 923661
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.2
+              }
+            }
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 30
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:14 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/yGjnIgmWddW5AtpY-nSMUklFVg8\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 953
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/runQuery",
+    "body": {
+      "readOptions": {
+        "readConsistency": "DEFAULT"
+      },
+      "partitionId": {
+        "datasetId": "s~dev-bydesign-2",
+        "namespace": "Company2"
+      },
+      "gqlQuery": {
+        "queryString": "SELECT * FROM Nasdaq100 ORDER BY netChange",
+        "allowLiteral": true,
+        "nameArgs": [],
+        "numberArgs": []
+      }
+    },
+    "status": 200,
+    "response": {
+      "batch": {
+        "entityResultType": "FULL",
+        "entityResults": [
+          {
+            "entity": {
+              "key": {
+                "partitionId": {
+                  "datasetId": "s~dev-bydesign-2",
+                  "namespace": "Company2"
+                },
+                "path": [
+                  {
+                    "kind": "Nasdaq100",
+                    "name": "EBAY"
+                  }
+                ]
+              },
+              "properties": {
+                "Symbol": {
+                  "stringValue": "EBAY"
+                },
+                "Name": {
+                  "stringValue": "eBay Inc"
+                },
+                "lastSale": {
+                  "doubleValue": 55.003
+                },
+                "netChange": {
+                  "doubleValue": 0.16
+                },
+                "pctChange": {
+                  "doubleValue": 0.33
+                },
+                "shareVolume": {
+                  "integerValue": "923661"
+                },
+                "Nasdaq100Points": {
+                  "doubleValue": 0.2
+                }
+              }
+            }
+          },
+          {
+            "entity": {
+              "key": {
+                "partitionId": {
+                  "datasetId": "s~dev-bydesign-2",
+                  "namespace": "Company2"
+                },
+                "path": [
+                  {
+                    "kind": "Nasdaq100",
+                    "name": "ATVI"
+                  }
+                ]
+              },
+              "properties": {
+                "Symbol": {
+                  "stringValue": "ATVI"
+                },
+                "Name": {
+                  "stringValue": "Activision Blizzard Inc"
+                },
+                "lastSale": {
+                  "doubleValue": 20.14
+                },
+                "netChange": {
+                  "doubleValue": 0.24
+                },
+                "pctChange": {
+                  "doubleValue": 1.21
+                },
+                "shareVolume": {
+                  "integerValue": "939808"
+                },
+                "Nasdaq100Points": {
+                  "doubleValue": 0.3
+                }
+              }
+            }
+          }
+        ],
+        "endCursor": "E-ABAOsB8gEJbmV0Q2hhbmdl-gEJIbgehetRuM4_7AGCAjJqEHN-ZGV2LWJ5ZGVzaWduLTJyEwsSCU5hc2RhcTEwMCIEQVRWSQyiAQhDb21wYW55MogCABQ=",
+        "moreResults": "MORE_RESULTS_AFTER_LIMIT",
+        "skippedResults": null
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:14 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/1j3GihA2Y5Am-7Z1u5taIOSj_cE\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 237
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "ERcOCtt-Ja1NGkkABRmGMYVhNitL3dXRV4kcQfsiNuooW3bHfkZHk8krZ2YrLmSVrDsarcR1Bn7_l2gdrlqPVR0UGbK2AI0iSXAV-uX8BwNtWEpk"
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:15 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/w1nCC303pbb6okYWIuTEkI0-iak\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "ERcOCtt-Ja1NGkkABRmGMYVhNitL3dXRV4kcQfsiNuooW3bHfkZHk8krZ2YrLmSVrDsarcR1Bn7_l2gdrlqPVR0UGbK2AI0iSXAV-uX8BwNtWEpk",
+      "mutation": {
+        "delete": [
+          {
+            "partitionId": {
+              "datasetId": "s~dev-bydesign-2",
+              "namespace": "Company2"
+            },
+            "path": [
+              {
+                "kind": "Nasdaq100",
+                "name": "ATVI"
+              }
+            ]
+          },
+          {
+            "partitionId": {
+              "datasetId": "s~dev-bydesign-2",
+              "namespace": "Company2"
+            },
+            "path": [
+              {
+                "kind": "Nasdaq100",
+                "name": "EBAY"
+              }
+            ]
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 30
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:15 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/yGjnIgmWddW5AtpY-nSMUklFVg8\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 409
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "EQYfzdLFtiNqGkkABRmGMU-FdyBN80jzLHURK8R1lPXfCE6E9HXfFAabfN7l2q4PQ8tWQXTM7akm2LG0z11jX7IZjVUkV_1M7okqh81b7uRR07Tz"
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:16 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/XNquWO5Y6QT2QTCuUyY3Xq2Dtcw\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "EQYfzdLFtiNqGkkABRmGMU-FdyBN80jzLHURK8R1lPXfCE6E9HXfFAabfN7l2q4PQ8tWQXTM7akm2LG0z11jX7IZjVUkV_1M7okqh81b7uRR07Tz",
+      "mutation": {
+        "insert": [
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "ATVI"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "ATVI"
+              },
+              "Name": {
+                "stringValue": "Activision Blizzard Inc"
+              },
+              "lastSale": {
+                "doubleValue": 20.14
+              },
+              "netChange": {
+                "doubleValue": 0.24
+              },
+              "pctChange": {
+                "doubleValue": 1.21
+              },
+              "shareVolume": {
+                "integerValue": 939808
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.3
+              }
+            }
+          },
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "EBAY"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "EBAY"
+              },
+              "Name": {
+                "stringValue": "eBay Inc"
+              },
+              "lastSale": {
+                "doubleValue": 55.003
+              },
+              "netChange": {
+                "doubleValue": 0.16
+              },
+              "pctChange": {
+                "doubleValue": 0.33
+              },
+              "shareVolume": {
+                "integerValue": 923661
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.2
+              }
+            }
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 30
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:16 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/yGjnIgmWddW5AtpY-nSMUklFVg8\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 953
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "EajvKJEZE8CDGkkABRmGMSJMki95md58mc1WGlN1T_gmCPx1wti_my6NfRDRDOIdVE5Y9K8BDMUp1_7UbWDcWZ9UkzgF5aFPIkHCXmycIL0BjIe6"
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:16 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/XWb-w6QV3Lv7X4SFtJUn-145FP0\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "EajvKJEZE8CDGkkABRmGMSJMki95md58mc1WGlN1T_gmCPx1wti_my6NfRDRDOIdVE5Y9K8BDMUp1_7UbWDcWZ9UkzgF5aFPIkHCXmycIL0BjIe6",
+      "mutation": {
+        "update": [
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "ATVI"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "ATVI"
+              },
+              "Name": {
+                "stringValue": "Activision Blizzard Inc"
+              },
+              "lastSale": {
+                "doubleValue": 20.14
+              },
+              "netChange": {
+                "doubleValue": 0.24
+              },
+              "pctChange": {
+                "doubleValue": 1.21
+              },
+              "shareVolume": {
+                "integerValue": 939808
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.4
+              }
+            }
+          },
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "EBAY"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "EBAY"
+              },
+              "Name": {
+                "stringValue": "eBay Inc"
+              },
+              "lastSale": {
+                "doubleValue": 55.003
+              },
+              "netChange": {
+                "doubleValue": 0.16
+              },
+              "pctChange": {
+                "doubleValue": 0.33
+              },
+              "shareVolume": {
+                "integerValue": 923661
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.30000000000000004
+              }
+            }
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 8
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:17 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/bMUq3BsGQBxVGURMjl8RB-mLzBM\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 969
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "EYR9mFNsbSzUGkkABRmGMQB2cmCYNeoJ7m9dReK_2CJNKml-al5Ks89Ab9u8S6FU2qaZ992UDGoblIz4r5e6CADg1qo-SqZ0gEN5fXJs36l3ks2e"
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:18 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/bKBVAWsnsJMQ2tnMmHU1cEKrpXk\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "EYR9mFNsbSzUGkkABRmGMQB2cmCYNeoJ7m9dReK_2CJNKml-al5Ks89Ab9u8S6FU2qaZ992UDGoblIz4r5e6CADg1qo-SqZ0gEN5fXJs36l3ks2e",
+      "mutation": {
+        "update": [
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "ATVI"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "ATVI"
+              },
+              "Name": {
+                "stringValue": "Activision Blizzard Inc"
+              },
+              "lastSale": {
+                "doubleValue": 20.14
+              },
+              "netChange": {
+                "doubleValue": 0.24
+              },
+              "pctChange": {
+                "doubleValue": 1.21
+              },
+              "shareVolume": {
+                "integerValue": 939808
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.4
+              }
+            }
+          },
+          {
+            "key": {
+              "partitionId": {
+                "datasetId": "s~dev-bydesign-2",
+                "namespace": "Company2"
+              },
+              "path": [
+                {
+                  "kind": "Nasdaq100",
+                  "name": "EBAY"
+                }
+              ]
+            },
+            "properties": {
+              "Symbol": {
+                "stringValue": "EBAY"
+              },
+              "Name": {
+                "stringValue": "eBay Inc"
+              },
+              "lastSale": {
+                "doubleValue": 55.003
+              },
+              "netChange": {
+                "doubleValue": 0.16
+              },
+              "pctChange": {
+                "doubleValue": 0.33
+              },
+              "shareVolume": {
+                "integerValue": 923661
+              },
+              "Nasdaq100Points": {
+                "doubleValue": 0.30000000000000004
+              }
+            }
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 0
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:18 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/sKXGENpVa8cEJK7jrGzE1Fr4Y0o\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 969
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/runQuery",
+    "body": {
+      "readOptions": {
+        "readConsistency": "DEFAULT"
+      },
+      "partitionId": {
+        "datasetId": "s~dev-bydesign-2",
+        "namespace": "Company2"
+      },
+      "gqlQuery": {
+        "queryString": "SELECT * FROM Nasdaq100 ORDER BY netChange",
+        "allowLiteral": true,
+        "nameArgs": [],
+        "numberArgs": []
+      }
+    },
+    "status": 200,
+    "response": {
+      "batch": {
+        "entityResultType": "FULL",
+        "entityResults": [
+          {
+            "entity": {
+              "key": {
+                "partitionId": {
+                  "datasetId": "s~dev-bydesign-2",
+                  "namespace": "Company2"
+                },
+                "path": [
+                  {
+                    "kind": "Nasdaq100",
+                    "name": "EBAY"
+                  }
+                ]
+              },
+              "properties": {
+                "Symbol": {
+                  "stringValue": "EBAY"
+                },
+                "Name": {
+                  "stringValue": "eBay Inc"
+                },
+                "lastSale": {
+                  "doubleValue": 55.003
+                },
+                "netChange": {
+                  "doubleValue": 0.16
+                },
+                "pctChange": {
+                  "doubleValue": 0.33
+                },
+                "shareVolume": {
+                  "integerValue": "923661"
+                },
+                "Nasdaq100Points": {
+                  "doubleValue": 0.30000000000000004
+                }
+              }
+            }
+          },
+          {
+            "entity": {
+              "key": {
+                "partitionId": {
+                  "datasetId": "s~dev-bydesign-2",
+                  "namespace": "Company2"
+                },
+                "path": [
+                  {
+                    "kind": "Nasdaq100",
+                    "name": "ATVI"
+                  }
+                ]
+              },
+              "properties": {
+                "Symbol": {
+                  "stringValue": "ATVI"
+                },
+                "Name": {
+                  "stringValue": "Activision Blizzard Inc"
+                },
+                "lastSale": {
+                  "doubleValue": 20.14
+                },
+                "netChange": {
+                  "doubleValue": 0.24
+                },
+                "pctChange": {
+                  "doubleValue": 1.21
+                },
+                "shareVolume": {
+                  "integerValue": "939808"
+                },
+                "Nasdaq100Points": {
+                  "doubleValue": 0.4
+                }
+              }
+            }
+          }
+        ],
+        "endCursor": "E-ABAOsB8gEJbmV0Q2hhbmdl-gEJIbgehetRuM4_7AGCAjJqEHN-ZGV2LWJ5ZGVzaWduLTJyEwsSCU5hc2RhcTEwMCIEQVRWSQyiAQhDb21wYW55MogCABQ=",
+        "moreResults": "MORE_RESULTS_AFTER_LIMIT",
+        "skippedResults": null
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:19 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/uAsr-8MoaX5_cFNXiNRKiki6K3I\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 237
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/beginTransaction",
+    "body": {
+      "isolationLevel": "SERIALIZABLE"
+    },
+    "status": 200,
+    "response": {
+      "transaction": "ER4XF-6LoNvDGjkABRmGMcm-nIyeQ3dfmWAQwW9fWA3cnttGGOgAiW1mGdSxiMb5V_BQi2544Kr2TWxAWUv1Q0opXD8="
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:19 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/tcDYRfQvpPyUEQfe9giQCud4TMk\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 33
+    }
+  },
+  {
+    "scope": "https://www.googleapis.com:443",
+    "method": "POST",
+    "path": "/datastore/v1beta2/datasets/s~dev-bydesign-2/commit",
+    "body": {
+      "transaction": "ER4XF-6LoNvDGjkABRmGMcm-nIyeQ3dfmWAQwW9fWA3cnttGGOgAiW1mGdSxiMb5V_BQi2544Kr2TWxAWUv1Q0opXD8=",
+      "mutation": {
+        "delete": [
+          {
+            "partitionId": {
+              "datasetId": "s~dev-bydesign-2",
+              "namespace": "Company2"
+            },
+            "path": [
+              {
+                "kind": "Nasdaq100",
+                "name": "ATVI"
+              }
+            ]
+          },
+          {
+            "partitionId": {
+              "datasetId": "s~dev-bydesign-2",
+              "namespace": "Company2"
+            },
+            "path": [
+              {
+                "kind": "Nasdaq100",
+                "name": "EBAY"
+              }
+            ]
+          }
+        ]
+      },
+      "mode": "TRANSACTIONAL"
+    },
+    "status": 200,
+    "response": {
+      "mutationResult": {
+        "indexUpdates": 30
+      }
+    },
+    "headers": {
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "date": "Mon, 15 Dec 2014 05:32:20 GMT",
+      "etag": "\"Ia_b-6JgywUHVES3yCJkmPpNIGM/yGjnIgmWddW5AtpY-nSMUklFVg8\"",
+      "vary": "Origin",
+      "content-type": "application/json; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "server": "GSE",
+      "alternate-protocol": "443:quic,p=0.02",
+      "transfer-encoding": "chunked"
+    },
+    "reqheaders": {
+      "x-goog-api-version": 2,
+      "x-goog-project-id": "s~dev-bydesign-2",
+      "authorization": "Bearer ya29.3QDR1AiOsdxOjzVFhC0Coz7hoNGL3FYccxitiMzeV9fX7hFfGpk_vhlKn2V-XadrsHOzYo-XCVx36A",
+      "host": "www.googleapis.com",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "content-length": 389
+    }
+  }
+]
