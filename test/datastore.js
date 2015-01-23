@@ -33,10 +33,24 @@ var assert = require("assert"),
         pctChange: 0.33,
         shareVolume: 923661,
         Nasdaq100Points: 0.2
-    }];
+    }],
+    options =  {
+        folders: {
+            fixtures: "test/fixtures" // folder to find/store fixtures in
+        },
+        place_holders: {},
+        enable_reqbody_recording: [{
+            path: "/o/oauth2/token",
+            enabled: false
+        }]
+    },
+    nockturnal = require("nockturnal")("datastore", options);
 
 describe('gcloud-datastore', function(){
     this.timeout(5000);
+    before(function() {
+        nockturnal.before();
+    });
     it('should save in data in a transaction', function(done) {
         return ds.transaction().then(function(t){
             assert.notEqual(t, null);
@@ -152,5 +166,8 @@ describe('gcloud-datastore', function(){
                 done();
             });
         });
+    });
+    after(function(done) {
+        nockturnal.after(done);
     });
 });

@@ -33,6 +33,7 @@
   "devDependencies": {
     "blanket": "^1.1.6",
     "chai": "^1.10.0",
-    "mocha": "^2.0.1"
+    "mocha": "^2.0.1",
+    "nockturnal": "^0.1.1"
   }
 }
