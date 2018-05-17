@@ -26,7 +26,7 @@
   "homepage": "https://github.com/sramam/gcloud-promise",
   "dependencies": {
     "bluebird": "^2.3.11",
-    "jws": "^0.2.6",
+    "jws": "^3.1.5",
     "request": "^2.48.0",
     "winston": "^0.8.3"
   },
